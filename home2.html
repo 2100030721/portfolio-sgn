@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title >SGN_Portfolio</title>
+    <link rel="icon" href="images/title_logo.jpg" type="image/x-icon">
+    <body>
+      <style>
+                        
+                        /* Slideshow container */
+                        .slideshow-container {
+                          max-width: 1000px;
+                          position: relative;
+                          margin: auto;
+                        }
+
+                        /* Fading animation */
+                        .fade {
+                          animation-name: fade;
+                          animation-duration: 1.5s;
+                          
+                        }
+
+                        @keyframes fade {
+                          from {opacity: .4} 
+                          to {opacity: 1}
+                        }
+
+                        /* On smaller screens, decrease text size */
+                        @media only screen and (max-width: 300px) {
+                          .text {font-size: 11px}
+                        }
+                        body {
+                          background-image: url('images/background.jpg');
+                            background-repeat: no-repeat;
+                            background-attachment: fixed;
+                            background-size: 100% 100%;
+                        }
+                          body {font-family: Arial, Helvetica, sans-serif;}
+                          .avatar {
+                          vertical-align: middle;
+                          width: 50px;
+                          height: 50px;
+                          border-radius: 100%;
+                        }
+                        #name {
+                            color: rgb(237, 27, 230);
+                            font-size: large;
+                            background-color: lightblue;
+                        }
+                    
+
+                #myBtn {
+                  display: none;
+                  position: fixed;
+                  bottom: 20px;
+                  right: 30px;
+                  z-index: 99;
+                  font-size: 18px;
+                  border: none;
+                  outline: none;
+                  background-color: rgb(64, 255, 0);
+                  color: white;
+                  cursor: pointer;
+                  padding: 15px;
+                  border-radius: 4px;
+                }
+
+                #myBtn:hover {
+                  background-color: #f32011;
+                }
+                html {
+                  scroll-behavior: smooth;
+                }
+
+
+                button img {
+                        border-radius: 50%;
+                    }
+
+                    
+        </style>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue" style="background-color: #e3f2fd;">
+      <div class="container-fluid"> <!-- Wrap the contents in a container -->
+        <a class="navbar-brand"><img src="images/logo.jpg" alt="" width="60" height="26"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 main ">
+            <li class="nav-item">
+              <a class="btn btn-primary" aria-current="page" href="home2.html">𝐇𝐨𝐦𝐞</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html" >𝐏𝐫𝐨𝐟𝐢𝐥𝐞</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="SKILLS.html">𝐒𝐤𝐢𝐥𝐥𝐬</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experiance.html">𝐄𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">𝐂𝐨𝐧𝐭𝐚𝐜𝐭</a>
+            </li>
+            
+            
+            
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://sgnresume.tiiny.site/">𝐑𝐞𝐬𝐮𝐦𝐞</a>
+          </li> 
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="https://sgn-youtube.netlify.app/">𝐲𝐨𝐮𝐭𝐮𝐛𝐞 (HTML&CSS)</a></li>
+                  <li><a class="dropdown-item" href="https://tik-tok-sgn.netlify.app/">𝙏𝙞𝙠-𝙏𝙤𝙠 (HTML&CSS) </a></li>
+                  <!--<li><a class="dropdown-item" href="#">Skill 2</a></li>
+                  <li><a class="dropdown-item" href="#">Skill 3</a></li>-->
+                  
+              </ul>
+          </li>
+          </ul>
+          <form class="d-flex">
+            <button type="submit" style="background: none; border: none; padding: 0; border-radius: 50%;">
+                <img src="images/scrool3.jpg" alt="Logo" height="40" style="border-radius: 50%;">
+            </button>
+        </form>            
+        </div>
+      </div>
+    </nav>
+        
+         
+  <div class="main">
+  <br><br><br>
+        <center>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/home_img.jpg" width="40%" height="400" style="border-radius: 45%;" setTimeout(carousel, 9000);>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/pprofilephoto.jpg" width="40%" height="400" style="border-radius: 50%;" setTimeout(carousel, 9000);>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/new_profile.jpg" width="40%" height="400" style="border-radius: 50%;" setTimeout(carousel, 9000);>
+        </div>
+        
+
+        </div>
+        <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </center>
+      </body></center>
+      
+      <center>
+        <h2 style="color:rgb(204, 255, 0)">𝐒𝐀𝐈𝐘𝐈𝐋𝐀 𝐆𝐈𝐑𝐈𝐃𝐇𝐀𝐑 𝐍𝐀𝐑𝐀𝐒𝐈𝐌𝐇𝐀</h2></center>
+        <center><a href="profile.html" class="btn btn-success"  role="button" aria-pressed="true" >HIRE ME</a></center>
+      <br><br>
+    </div><br>
+     
+    
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">🔝</button>
+    </div>
+  </div>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function redirectToIndex() {
+        window.location.href = "index.html";
+        return false; // Prevents the default form submission
+    }
+      </script>
+      
+    </body>
+</html>
